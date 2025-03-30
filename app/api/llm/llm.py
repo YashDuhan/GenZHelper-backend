@@ -38,7 +38,7 @@ class GenZTranslator:
 
             # Call Groq API
             completion = self.client.chat.completions.create(
-                model="mixtral-8x7b-32768",  # Using Mixtral model for better performance
+                model="mistral-saba-24b",  # Using Mixtral model for better performance
                 messages=messages,
                 temperature=0.7, # lower temperature for more consistent results
                 max_tokens=1024,
